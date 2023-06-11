@@ -97,24 +97,49 @@ public class Figuras_Tridimensionales {
     private double area_esfera(){
         return 4 * this.pi * Math.pow(radio_esf,2);
     }
+    private double volumen_cubo(){
+        return Math.pow(this.lado_cub,3);
+    }
+    private double volumen_cilindro(){
+        return this.pi*Math.pow(this.radio_cil,2);
+    }
+    private double volumen_piramide(){
+        return ((Math.pow(this.lado_pir,3))*this.altu_pir/3);
+    }
+    private double volumen_esfera(){
+        return (4/3)*this.pi*Math.pow(this.radio_esf,3);
+    }
     public void imprimir_Cubo(){
         System.out.printf("El area del cubo es: ");
         System.out.print(area_cubo());
         System.out.println();
+        System.out.printf("El volumen del cubo es:");
+        System.out.print(volumen_cubo());
+        System.out.println("");
     }
     public void imprimir_Cilindro(){
         System.out.printf("El area del cilindro es: ");
         System.out.print(area_cilindro());
+        System.out.println();
+        System.out.printf("El volumen del cilindro es:");
+        System.out.println(volumen_cilindro());
         System.out.println();
     }
     public void imprimir_Piramide(){
         System.out.printf("El area de la piramide es: ");
         System.out.print(area_piramide());
         System.out.println();
+        System.out.printf("El volumen de la piramide es:");
+        System.out.println(volumen_piramide());
+        System.out.println();
     }
     public void imprimir_Esfera(){
         System.out.printf("El area de la esfera es: ");
         System.out.print(area_esfera());
         System.out.println();
+        System.out.printf("El volumen de la esfera es:");
+        System.out.print(volumen_esfera());
+        System.out.println();
     }
+
 }
