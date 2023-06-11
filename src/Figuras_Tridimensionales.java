@@ -11,14 +11,6 @@ public class Figuras_Tridimensionales {
 
 //Constructores
 
-    public Figuras_Tridimensionales(float lado_cub, float radio_cil, float altura_cil, float lado_pir, float altu_pir, float radio_esf) {
-        this.lado_cub = lado_cub;
-        this.radio_cil = radio_cil;
-        this.altura_cil = altura_cil;
-        this.lado_pir = lado_pir;
-        this.altu_pir = altu_pir;
-        this.radio_esf = radio_esf;
-    }
 
 
 //setter and getter
@@ -91,21 +83,26 @@ public class Figuras_Tridimensionales {
     }
     //Piramide
     private double area_piramide(){
-        return this.lado_pir * (this.lado_pir + (Math.sqrt((4 * Math.pow(this.altu_pir,2)) + Math.pow(this.lado_pir,2))));
-    }
+        return this.lado_pir * (this.lado_pir + (Math.sqrt((4 * Math.pow(this.altu_pir,2)) + Math.pow(this.lado_pir,2))));}
     //Esfera
     private double area_esfera(){
         return 4 * this.pi * Math.pow(radio_esf,2);
     }
+
+    //Metodos para calcular el volumen de las figuras tridimensionales
+    //Cubo
     private double volumen_cubo(){
         return Math.pow(this.lado_cub,3);
     }
+    //Cilindro
     private double volumen_cilindro(){
         return this.pi*Math.pow(this.radio_cil,2);
     }
+    //Piramide
     private double volumen_piramide(){
         return ((Math.pow(this.lado_pir,3))*this.altu_pir/3);
     }
+    //Esfera
     private double volumen_esfera(){
         return (4/3)*this.pi*Math.pow(this.radio_esf,3);
     }
