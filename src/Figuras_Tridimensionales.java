@@ -1,17 +1,24 @@
 public class Figuras_Tridimensionales {
-    //Variables para el cubo
+    // Variables para el cubo
     private float lado_cub;
-    //variables para el cilindro
+    // Variables para el cilindro
     private float radio_cil, altura_cil;
-    private double pi=3.1416;
-    //variables para la piramide
+    private double pi = 3.1416;
+    // Variables para la piramide
     private float lado_pir, altu_pir;
-    //variables para esfera
+    // Variables para esfera
     private float radio_esf;
 
-//Constructores
+    // Constructor
 
-
+    public Figuras_Tridimensionales(float lado_cub) {
+        this.lado_cub = lado_cub;
+        this.radio_esf=lado_cub;}
+    public Figuras_Tridimensionales(float radio_cil, float altura_cil) {
+        this.radio_cil = radio_cil;
+        this.altura_cil = altura_cil;
+        this.lado_pir=radio_cil;
+        this.altu_pir=altura_cil;}
 
 //setter and getter
 
