@@ -20,9 +20,7 @@ public class Figuras_Tridimensionales {
         return lado_cub;
     }
 
-    private void setLado_cub(float lado_cub) {
-        this.lado_cub = lado_cub;
-    }
+    private void setLado_cub(float lado_cub) {this.lado_cub = lado_cub;}
 
     private float getRadio_cil() {
         return radio_cil;
@@ -106,37 +104,38 @@ public class Figuras_Tridimensionales {
     private double volumen_esfera(){
         return (4/3)*this.pi*Math.pow(this.radio_esf,3);
     }
+
+    //Funciones para imprimir los resultados
+    //Cubo
     public void imprimir_Cubo(){
         System.out.printf("El area del cubo es: ");
         System.out.print(area_cubo());
         System.out.println();
         System.out.printf("El volumen del cubo es:");
         System.out.print(volumen_cubo());
-        System.out.println("");
-    }
+        System.out.println();}
+    //Cilindro
     public void imprimir_Cilindro(){
         System.out.printf("El area del cilindro es: ");
         System.out.print(area_cilindro());
         System.out.println();
         System.out.printf("El volumen del cilindro es:");
         System.out.println(volumen_cilindro());
-        System.out.println();
-    }
+        System.out.println();}
+    //Piramide
     public void imprimir_Piramide(){
         System.out.printf("El area de la piramide es: ");
         System.out.print(area_piramide());
         System.out.println();
         System.out.printf("El volumen de la piramide es:");
         System.out.println(volumen_piramide());
-        System.out.println();
-    }
+        System.out.println();}
+    //Esfera
     public void imprimir_Esfera(){
         System.out.printf("El area de la esfera es: ");
         System.out.print(area_esfera());
         System.out.println();
         System.out.printf("El volumen de la esfera es:");
         System.out.print(volumen_esfera());
-        System.out.println();
-    }
-
+        System.out.println();}
 }

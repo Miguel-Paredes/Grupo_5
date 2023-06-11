@@ -1,5 +1,6 @@
 public class MenuFiguras {
     public static void main(String[] args) {
+        //Se crean objetos, en los parametros se colocan valores a los objetos
         Figuras_Tridimensionales Cubo = new Figuras_Tridimensionales(5);
         Figuras_Tridimensionales Cilindro = new Figuras_Tridimensionales(4, 10);
         Figuras_Tridimensionales Piramide = new Figuras_Tridimensionales(3, 8);
