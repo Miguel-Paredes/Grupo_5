@@ -11,15 +11,13 @@ public class Figuras_Tridimensionales {
 
 //Constructores
 
-    public Figuras_Tridimensionales(float lado_cub, float radio_cil, float altura_cil, double pi, float lado_pir, float altu_pir, float radio_esf) {
+    public Figuras_Tridimensionales(float lado_cub, float radio_cil, float altura_cil, float lado_pir, float altu_pir, float radio_esf) {
         this.lado_cub = lado_cub;
         this.radio_cil = radio_cil;
         this.altura_cil = altura_cil;
-        this.pi = pi;
         this.lado_pir = lado_pir;
         this.altu_pir = altu_pir;
         this.radio_esf = radio_esf;
-
     }
 
 
@@ -99,5 +97,24 @@ public class Figuras_Tridimensionales {
     private double area_esfera(){
         return 4 * this.pi * Math.pow(radio_esf,2);
     }
-
+    public void imprimir_Cubo(){
+        System.out.printf("El area del cubo es: ");
+        System.out.print(area_cubo());
+        System.out.println();
+    }
+    public void imprimir_Cilindro(){
+        System.out.printf("El area del cilindro es: ");
+        System.out.print(area_cilindro());
+        System.out.println();
+    }
+    public void imprimir_Piramide(){
+        System.out.printf("El area de la piramide es: ");
+        System.out.print(area_piramide());
+        System.out.println();
+    }
+    public void imprimir_Esfera(){
+        System.out.printf("El area de la esfera es: ");
+        System.out.print(area_esfera());
+        System.out.println();
+    }
 }
