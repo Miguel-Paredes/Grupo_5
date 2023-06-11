@@ -9,7 +9,8 @@ public class Figuras_Tridimensionales {
     //variables para esfera
     private float radio_esf;
 
-//Constructoress
+//Constructores
+
     public Figuras_Tridimensionales(float lado_cub, float radio_cil, float altura_cil, double pi, float lado_pir, float altu_pir, float radio_esf) {
         this.lado_cub = lado_cub;
         this.radio_cil = radio_cil;
@@ -19,6 +20,7 @@ public class Figuras_Tridimensionales {
         this.altu_pir = altu_pir;
         this.radio_esf = radio_esf;
     }
+
 
 //setter and getter
 
