@@ -19,6 +19,7 @@ public class Figuras_Tridimensionales {
         this.lado_pir = lado_pir;
         this.altu_pir = altu_pir;
         this.radio_esf = radio_esf;
+
     }
 
 
